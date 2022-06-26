@@ -1,3 +1,4 @@
+// Buttons
 .btn {
   font-size: $button-font-size;
   color: #fff;
@@ -12,24 +13,6 @@
   border-radius: $button-radius;
 }
 
-.btn-com {
-  font-size: $button-font-size;
-  color: #fff;
-  padding: $button-2-padding;
-  margin: $button-margin;
-  display: inline-block;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: $transition-button-1;
-  border-radius: $button-radius;
-
-  &:active {
-    transform: translateY(-2px) !important;
-  }
-}
-
 @each $name,
 $color in $colors {
   .btn-#{$name} {
@@ -42,7 +25,7 @@ $color in $colors {
     }
 
     &:active {
-      transition: $transition-button-2;
+      transition: $transition-button-1;
       transform: $button-translate;
       background: darken($color, $button-active-darken);
     }
@@ -52,5 +35,47 @@ $color in $colors {
       outline: 3px solid rgba(lighten($color, $button-border-darken), .4);
     }
 
+  }
+}
+
+// Alt Button
+.btn-alt{
+  font-size: $button-font-size;
+  color: getColor("alt-text");
+  background: getColor("alt-background");
+  padding: $button-padding;
+  margin: $button-margin;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: $transition-button-1;
+  border-radius: $button-radius;
+
+  &:hover {
+    transition: $transition-button-1  !important;
+  }
+
+  &:active {
+    transition: $transition-button-1 !important;
+    transform: $button-translate;
+  }
+
+  &:focus-visible {
+    transition: $transition-button-2;
+    outline: 3px solid rgba(0, 130, 252, 0.39 );
+  }
+
+}
+
+
+// compact Button
+.btn-com {
+  padding: $button-2-padding;
+  margin: $button-margin;
+
+  &:active {
+    transform: translateY(-2px) !important;
   }
 }

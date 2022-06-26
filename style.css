@@ -12,23 +12,6 @@
   border-radius: 4px;
 }
 
-.btn-com {
-  font-size: 16px;
-  color: #fff;
-  padding: 4px 8px;
-  margin: 0.25rem;
-  display: inline-block;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 4px;
-}
-.btn-com:active {
-  transform: translateY(-2px) !important;
-}
-
 .btn-primary {
   background: #0d6efd;
 }
@@ -37,7 +20,7 @@
   background: #025bdf;
 }
 .btn-primary:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #025bdf;
 }
@@ -54,7 +37,7 @@
   background: #025bdf;
 }
 .btn-blue:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #025bdf;
 }
@@ -71,7 +54,7 @@
   background: #550bce;
 }
 .btn-indigo:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #550bce;
 }
@@ -88,7 +71,7 @@
   background: #5d36a4;
 }
 .btn-purple:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #5d36a4;
 }
@@ -105,7 +88,7 @@
   background: #bb2670;
 }
 .btn-pink:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #bb2670;
 }
@@ -122,7 +105,7 @@
   background: #c62232;
 }
 .btn-red:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #c62232;
 }
@@ -139,7 +122,7 @@
   background: #e66a02;
 }
 .btn-orange:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #e66a02;
 }
@@ -156,7 +139,7 @@
   background: #c77400;
 }
 .btn-yellow:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #c77400;
 }
@@ -173,7 +156,7 @@
   background: #216b30;
 }
 .btn-green:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #216b30;
 }
@@ -190,7 +173,7 @@
   background: #076c4d;
 }
 .btn-teal:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #076c4d;
 }
@@ -207,7 +190,7 @@
   background: #0ba9c9;
 }
 .btn-cyan:active {
-  transition: 0.1s;
+  transition: 0.3s;
   transform: translateY(-3px);
   background: #0ba9c9;
 }
@@ -216,14 +199,52 @@
   outline: 3px solid rgba(108, 224, 247, 0.4);
 }
 
+.btn-alt {
+  font-size: 16px;
+  color: var(--color-alt-text);
+  background: var(--color-alt-background);
+  padding: 8px 16px;
+  margin: 0.25rem;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.btn-alt:hover {
+  transition: 0.3s !important;
+}
+.btn-alt:active {
+  transition: 0.3s !important;
+  transform: translateY(-3px);
+}
+.btn-alt:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(0, 130, 252, 0.39);
+}
+
+.btn-com {
+  padding: 4px 8px;
+  margin: 0.25rem;
+}
+.btn-com:active {
+  transform: translateY(-2px) !important;
+}
+
 .light-theme {
   --color-text: rgb(26, 27, 30);
   --color-background: #fff;
+  --color-alt-text: #fff;
+  --color-alt-background: rgb(26, 27, 30);
 }
 
 .dark-theme {
   --color-text: #fff;
   --color-background: rgb(26, 27, 30);
+  --color-alt-text: rgb(26, 27, 30);
+  --color-alt-background: #fff;
 }
 
 .m-0 {
