@@ -1,0 +1,56 @@
+.btn {
+  font-size: $button-font-size;
+  color: #fff;
+  padding: $button-padding;
+  margin: $button-margin;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: $transition-button-1;
+  border-radius: $button-radius;
+}
+
+.btn-com {
+  font-size: $button-font-size;
+  color: #fff;
+  padding: $button-2-padding;
+  margin: $button-margin;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: $transition-button-1;
+  border-radius: $button-radius;
+
+  &:active {
+    transform: translateY(-2px) !important;
+  }
+}
+
+@each $name,
+$color in $colors {
+  .btn-#{$name} {
+
+    background: $color;
+
+    &:hover {
+      transition: $transition-button-1  !important;
+      background: darken($color, $button-hover-darken);
+    }
+
+    &:active {
+      transition: $transition-button-2;
+      transform: $button-translate;
+      background: darken($color, $button-active-darken);
+    }
+
+    &:focus-visible {
+      transition: $transition-button-2;
+      outline: 3px solid rgba(lighten($color, $button-border-darken), .4);
+    }
+
+  }
+}

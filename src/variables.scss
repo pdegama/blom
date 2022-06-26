@@ -1,3 +1,28 @@
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #f08c00;
+$green: #2B8A3E;
+$teal: #099268;
+$cyan: #0dcaf0;
+
+$colors: (
+  "primary": $blue,
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan
+);
+
 $light-theme: (
   "text": rgb(26, 27, 30),
   "background": #fff
@@ -7,3 +32,25 @@ $dark-theme: (
   "text": #fff,
   "background": rgb(26, 27, 30)
 );
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+$transition-button-1: .3s;
+$transition-button-2: .1s;
+$button-font-size: 16px;
+$button-hover-darken: 8%;
+$button-active-darken: 8%;
+$button-border-darken: 20%;
+$button-radius: 4px;
+$button-translate: translateY(-3px);
+$button-padding: 8px 16px;
+$button-2-padding: 4px 8px;
+$button-margin: $spacer * .25;

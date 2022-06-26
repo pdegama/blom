@@ -2,18 +2,24 @@
 @import "./variables.scss";
 @import "./functions.scss";
 
-// app utils
-@import "./theme.scss";
-
 // component
 @import "./components/Button.scss";
 
-*{
+// app utils
+@import "./theme.scss";
+@import "./util/margin.scss";
+@import "./util/padding.scss";
+
+* {
   margin: 0;
   padding: 0;
+  font-family: ubuntu;
+  box-sizing: border-box;
 }
 
 .main-app {
+  display: inline-block;
   min-height: 100vh;
+  min-width: 100%;
   background: getColor("background");
 }

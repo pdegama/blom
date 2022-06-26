@@ -1,0 +1,15 @@
+@each $v, $s in $spacers {
+  .p-#{$v}{
+    padding: $s;
+  }
+
+  .px-#{$v}{
+    padding-left: $s;
+    padding-right: $s;
+  }
+
+  .py-#{$v}{
+    padding-top: $s;
+    padding-bottom: $s;
+  }
+}

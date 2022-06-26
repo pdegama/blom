@@ -1,3 +1,221 @@
+.btn {
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 0.25rem;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.btn-com {
+  font-size: 16px;
+  color: #fff;
+  padding: 4px 8px;
+  margin: 0.25rem;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.btn-com:active {
+  transform: translateY(-2px) !important;
+}
+
+.btn-primary {
+  background: #0d6efd;
+}
+.btn-primary:hover {
+  transition: 0.3s !important;
+  background: #025bdf;
+}
+.btn-primary:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #025bdf;
+}
+.btn-primary:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(114, 171, 254, 0.4);
+}
+
+.btn-blue {
+  background: #0d6efd;
+}
+.btn-blue:hover {
+  transition: 0.3s !important;
+  background: #025bdf;
+}
+.btn-blue:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #025bdf;
+}
+.btn-blue:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(114, 171, 254, 0.4);
+}
+
+.btn-indigo {
+  background: #6610f2;
+}
+.btn-indigo:hover {
+  transition: 0.3s !important;
+  background: #550bce;
+}
+.btn-indigo:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #550bce;
+}
+.btn-indigo:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(164, 113, 247, 0.4);
+}
+
+.btn-purple {
+  background: #6f42c1;
+}
+.btn-purple:hover {
+  transition: 0.3s !important;
+  background: #5d36a4;
+}
+.btn-purple:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #5d36a4;
+}
+.btn-purple:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(170, 143, 218, 0.4);
+}
+
+.btn-pink {
+  background: #d63384;
+}
+.btn-pink:hover {
+  transition: 0.3s !important;
+  background: #bb2670;
+}
+.btn-pink:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #bb2670;
+}
+.btn-pink:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(231, 136, 183, 0.4);
+}
+
+.btn-red {
+  background: #dc3545;
+}
+.btn-red:hover {
+  transition: 0.3s !important;
+  background: #c62232;
+}
+.btn-red:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #c62232;
+}
+.btn-red:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(235, 140, 149, 0.4);
+}
+
+.btn-orange {
+  background: #fd7e14;
+}
+.btn-orange:hover {
+  transition: 0.3s !important;
+  background: #e66a02;
+}
+.btn-orange:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #e66a02;
+}
+.btn-orange:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(254, 182, 121, 0.4);
+}
+
+.btn-yellow {
+  background: #f08c00;
+}
+.btn-yellow:hover {
+  transition: 0.3s !important;
+  background: #c77400;
+}
+.btn-yellow:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #c77400;
+}
+.btn-yellow:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(255, 185, 87, 0.4);
+}
+
+.btn-green {
+  background: #2B8A3E;
+}
+.btn-green:hover {
+  transition: 0.3s !important;
+  background: #216b30;
+}
+.btn-green:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #216b30;
+}
+.btn-green:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(82, 201, 106, 0.4);
+}
+
+.btn-teal {
+  background: #099268;
+}
+.btn-teal:hover {
+  transition: 0.3s !important;
+  background: #076c4d;
+}
+.btn-teal:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #076c4d;
+}
+.btn-teal:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(17, 240, 172, 0.4);
+}
+
+.btn-cyan {
+  background: #0dcaf0;
+}
+.btn-cyan:hover {
+  transition: 0.3s !important;
+  background: #0ba9c9;
+}
+.btn-cyan:active {
+  transition: 0.1s;
+  transform: translateY(-3px);
+  background: #0ba9c9;
+}
+.btn-cyan:focus-visible {
+  transition: 0.1s;
+  outline: 3px solid rgba(108, 224, 247, 0.4);
+}
+
 .light-theme {
   --color-text: rgb(26, 27, 30);
   --color-background: #fff;
@@ -8,13 +226,185 @@
   --color-background: rgb(26, 27, 30);
 }
 
-* {
+.m-0 {
   margin: 0;
+}
+
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.m-3 {
+  margin: 1rem;
+}
+
+.mx-3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.m-4 {
+  margin: 1.5rem;
+}
+
+.mx-4 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.m-5 {
+  margin: 3rem;
+}
+
+.mx-5 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.p-0 {
   padding: 0;
 }
 
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.px-3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+.px-5 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: ubuntu;
+  box-sizing: border-box;
+}
+
 .main-app {
+  display: inline-block;
   min-height: 100vh;
+  min-width: 100%;
   background: var(--color-background);
 }
 

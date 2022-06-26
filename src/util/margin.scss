@@ -1,0 +1,16 @@
+@each $v, $s in $spacers {
+  .m-#{$v}{
+    margin: $s;
+  }
+
+  .mx-#{$v}{
+    margin-left: $s;
+    margin-right: $s;
+  }
+
+  .my-#{$v}{
+    margin-top: $s;
+    margin-bottom: $s;
+  }
+}
+
