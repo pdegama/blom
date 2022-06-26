@@ -1,0 +1,21 @@
+{
+  "name": "blom",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "sass --watch src/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meparthka/blom.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meparthka/blom/issues"
+  },
+  "homepage": "https://github.com/meparthka/blom#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}

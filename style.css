@@ -1,0 +1,21 @@
+.light-theme {
+  --color-text: rgb(26, 27, 30);
+  --color-background: #fff;
+}
+
+.dark-theme {
+  --color-text: #fff;
+  --color-background: rgb(26, 27, 30);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-app {
+  min-height: 100vh;
+  background: var(--color-background);
+}
+
+/*# sourceMappingURL=style.css.map */

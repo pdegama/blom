@@ -1,0 +1,19 @@
+// utils
+@import "./variables.scss";
+@import "./functions.scss";
+
+// app utils
+@import "./theme.scss";
+
+// component
+@import "./components/Button.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main-app {
+  min-height: 100vh;
+  background: getColor("background");
+}
