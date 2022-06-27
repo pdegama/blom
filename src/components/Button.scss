@@ -11,6 +11,21 @@
   cursor: pointer;
   transition: $transition-button-1;
   border-radius: $button-radius;
+
+  &:hover {
+    transition: $transition-button-1  !important;
+    transform: $button-hover-translate;
+  }
+
+  &:active {
+    transition: $transition-button-1;
+    transform: $button-active-translate;
+  }
+
+  &:focus-visible {
+    transition: $transition-button-2;
+  }
+
 }
 
 @each $name,
@@ -20,18 +35,14 @@ $color in $colors {
     background: $color;
 
     &:hover {
-      transition: $transition-button-1  !important;
       background: darken($color, $button-hover-darken);
     }
 
     &:active {
-      transition: $transition-button-1;
-      transform: $button-translate;
       background: darken($color, $button-active-darken);
     }
 
     &:focus-visible {
-      transition: $transition-button-2;
       outline: 3px solid rgba(lighten($color, $button-border-darken), .4);
     }
 
@@ -54,12 +65,13 @@ $color in $colors {
   border-radius: $button-radius;
 
   &:hover {
-    transition: $transition-button-1  !important;
+    transition: $transition-button-1 !important;
+    transform: $button-hover-translate;
   }
 
   &:active {
     transition: $transition-button-1 !important;
-    transform: $button-translate;
+    transform: $button-active-translate;
   }
 
   &:focus-visible {
@@ -72,10 +84,14 @@ $color in $colors {
 
 // compact Button
 .btn-com {
-  padding: $button-2-padding;
+  padding: $button-com-padding;
   margin: $button-margin;
 
+  &:hover {
+    transform: $button-com-hover-translate !important;
+  }
+
   &:active {
-    transform: translateY(-2px) !important;
+    transform: $button-com-active-translate !important;
   }
 }

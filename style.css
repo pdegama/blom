@@ -8,24 +8,31 @@
   border: none;
   outline: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.4s;
   border-radius: 4px;
+}
+.btn:hover {
+  transition: 0.4s !important;
+  transform: translateY(0px);
+}
+.btn:active {
+  transition: 0.4s;
+  transform: translateY(-3px);
+}
+.btn:focus-visible {
+  transition: 0.1s;
 }
 
 .btn-primary {
   background: #0d6efd;
 }
 .btn-primary:hover {
-  transition: 0.3s !important;
   background: #025bdf;
 }
 .btn-primary:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #025bdf;
 }
 .btn-primary:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(114, 171, 254, 0.4);
 }
 
@@ -33,16 +40,12 @@
   background: #0d6efd;
 }
 .btn-blue:hover {
-  transition: 0.3s !important;
   background: #025bdf;
 }
 .btn-blue:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #025bdf;
 }
 .btn-blue:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(114, 171, 254, 0.4);
 }
 
@@ -50,16 +53,12 @@
   background: #6610f2;
 }
 .btn-indigo:hover {
-  transition: 0.3s !important;
   background: #550bce;
 }
 .btn-indigo:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #550bce;
 }
 .btn-indigo:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(164, 113, 247, 0.4);
 }
 
@@ -67,16 +66,12 @@
   background: #6f42c1;
 }
 .btn-purple:hover {
-  transition: 0.3s !important;
   background: #5d36a4;
 }
 .btn-purple:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #5d36a4;
 }
 .btn-purple:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(170, 143, 218, 0.4);
 }
 
@@ -84,16 +79,12 @@
   background: #d63384;
 }
 .btn-pink:hover {
-  transition: 0.3s !important;
   background: #bb2670;
 }
 .btn-pink:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #bb2670;
 }
 .btn-pink:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(231, 136, 183, 0.4);
 }
 
@@ -101,16 +92,12 @@
   background: #dc3545;
 }
 .btn-red:hover {
-  transition: 0.3s !important;
   background: #c62232;
 }
 .btn-red:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #c62232;
 }
 .btn-red:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(235, 140, 149, 0.4);
 }
 
@@ -118,16 +105,12 @@
   background: #fd7e14;
 }
 .btn-orange:hover {
-  transition: 0.3s !important;
   background: #e66a02;
 }
 .btn-orange:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #e66a02;
 }
 .btn-orange:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(254, 182, 121, 0.4);
 }
 
@@ -135,16 +118,12 @@
   background: #f08c00;
 }
 .btn-yellow:hover {
-  transition: 0.3s !important;
   background: #c77400;
 }
 .btn-yellow:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #c77400;
 }
 .btn-yellow:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(255, 185, 87, 0.4);
 }
 
@@ -152,16 +131,12 @@
   background: #2B8A3E;
 }
 .btn-green:hover {
-  transition: 0.3s !important;
   background: #216b30;
 }
 .btn-green:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #216b30;
 }
 .btn-green:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(82, 201, 106, 0.4);
 }
 
@@ -169,16 +144,12 @@
   background: #099268;
 }
 .btn-teal:hover {
-  transition: 0.3s !important;
   background: #076c4d;
 }
 .btn-teal:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #076c4d;
 }
 .btn-teal:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(17, 240, 172, 0.4);
 }
 
@@ -186,16 +157,12 @@
   background: #0dcaf0;
 }
 .btn-cyan:hover {
-  transition: 0.3s !important;
   background: #0ba9c9;
 }
 .btn-cyan:active {
-  transition: 0.3s;
-  transform: translateY(-3px);
   background: #0ba9c9;
 }
 .btn-cyan:focus-visible {
-  transition: 0.1s;
   outline: 3px solid rgba(108, 224, 247, 0.4);
 }
 
@@ -210,14 +177,15 @@
   border: none;
   outline: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.4s;
   border-radius: 4px;
 }
 .btn-alt:hover {
-  transition: 0.3s !important;
+  transition: 0.4s !important;
+  transform: translateY(0px);
 }
 .btn-alt:active {
-  transition: 0.3s !important;
+  transition: 0.4s !important;
   transform: translateY(-3px);
 }
 .btn-alt:focus-visible {
@@ -228,6 +196,9 @@
 .btn-com {
   padding: 4px 8px;
   margin: 0.25rem;
+}
+.btn-com:hover {
+  transform: translateY(0px) !important;
 }
 .btn-com:active {
   transform: translateY(-2px) !important;
@@ -247,6 +218,87 @@
   --color-alt-background: #fff;
 }
 
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md, .container,
+.container-sm {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.25rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .container-sm {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .container-sm {
+    max-width: 720px;
+  }
+  .container-md {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .container-sm {
+    max-width: 960px;
+  }
+  .container-md {
+    max-width: 960px;
+  }
+  .container-lg {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .container-sm {
+    max-width: 1140px;
+  }
+  .container-md {
+    max-width: 1140px;
+  }
+  .container-lg {
+    max-width: 1140px;
+  }
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  .container-sm {
+    max-width: 1320px;
+  }
+  .container-md {
+    max-width: 1320px;
+  }
+  .container-lg {
+    max-width: 1320px;
+  }
+  .container-xl {
+    max-width: 1320px;
+  }
+  .container-xxl {
+    max-width: 1320px;
+  }
+}
 .m-0 {
   margin: 0;
 }
@@ -331,6 +383,48 @@
   margin-bottom: 3rem;
 }
 
+.m-6 {
+  margin: 3.5rem;
+}
+
+.mx-6 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.my-6 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.m-7 {
+  margin: 4rem;
+}
+
+.mx-7 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.my-7 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.m-8 {
+  margin: 4.5rem;
+}
+
+.mx-8 {
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+}
+
+.my-8 {
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -413,6 +507,48 @@
 .py-5 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.p-6 {
+  padding: 3.5rem;
+}
+
+.px-6 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.py-6 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.p-7 {
+  padding: 4rem;
+}
+
+.px-7 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.py-7 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.p-8 {
+  padding: 4.5rem;
+}
+
+.px-8 {
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+}
+
+.py-8 {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 * {

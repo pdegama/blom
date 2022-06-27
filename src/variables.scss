@@ -9,6 +9,18 @@ $green: #2B8A3E;
 $teal: #099268;
 $cyan: #0dcaf0;
 
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$max-sm: 540px;
+$max-md: 720px;
+$max-lg: 960px;
+$max-xl: 1140px;
+$max-xxl: 1320px;
+
 $dark-background: rgb(26, 27, 30);
 $light-background: #fff;
 $dark-text: #fff;
@@ -16,14 +28,17 @@ $light-text: rgb(26, 27, 30);
 
 $spacer: 1rem;
 
-$transition-button-1: .3s;
+$transition-button-1: .4s;
 $transition-button-2: .1s;
 $button-font-size: 16px;
 $button-hover-darken: 8%;
 $button-active-darken: 8%;
 $button-border-darken: 20%;
 $button-radius: 4px;
-$button-translate: translateY(-3px);
+$button-hover-translate: translateY(0px);
+$button-active-translate: translateY(-3px);
+$button-com-hover-translate: translateY(0px);
+$button-com-active-translate: translateY(-2px);
 $button-padding: 8px 16px;
-$button-2-padding: 4px 8px;
+$button-com-padding: 4px 8px;
 $button-margin: $spacer * .25;

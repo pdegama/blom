@@ -1,0 +1,57 @@
+@use "sass:map";
+
+$containers: (
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+%container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: $spacer * .25;
+}
+
+@each $n,
+$v in $containers {
+
+  .container,
+  .container-#{$n} {
+    @extend %container;
+  }
+}
+
+@each $n,
+$v in $containers {
+  @media (min-width: $v) {
+    .container {
+      max-width: map.get($container-max-widths, $n);
+    }
+
+    $check: true;
+
+    @each $i,
+    $j in $containers {
+      @if($check) {
+        .container-#{$i} {
+          max-width: map.get($container-max-widths, $n);
+        }
+
+        @if($n ==$i) {
+          $check: false;
+        }
+      }
+    }
+  }
+}
