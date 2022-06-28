@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // Buttons
 .btn {
   font-size: $button-font-size;
@@ -50,7 +52,7 @@ $color in $colors {
 }
 
 // Alt Button
-.btn-alt{
+.btn-alt {
   font-size: $button-font-size;
   color: getColor("alt-text");
   background: getColor("alt-background");
@@ -65,18 +67,18 @@ $color in $colors {
   border-radius: $button-radius;
 
   &:hover {
-    transition: $transition-button-1 !important;
+    transition: $transition-button-1  !important;
     transform: $button-hover-translate;
   }
 
   &:active {
-    transition: $transition-button-1 !important;
+    transition: $transition-button-1  !important;
     transform: $button-active-translate;
   }
 
   &:focus-visible {
     transition: $transition-button-2;
-    outline: 3px solid rgba(0, 130, 252, 0.39 );
+    outline: 3px solid rgba(map.get($colors, "primary"), 0.39);
   }
 
 }
@@ -88,10 +90,10 @@ $color in $colors {
   margin: $button-margin;
 
   &:hover {
-    transform: $button-com-hover-translate !important;
+    transform: $button-com-hover-translate  !important;
   }
 
   &:active {
-    transform: $button-com-active-translate !important;
+    transform: $button-com-active-translate  !important;
   }
 }
