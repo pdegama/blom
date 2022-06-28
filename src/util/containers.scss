@@ -1,13 +1,5 @@
 @use "sass:map";
 
-$containers: (
-  sm: $sm,
-  md: $md,
-  lg: $lg,
-  xl: $xl,
-  xxl: $xxl
-);
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -18,13 +10,13 @@ $container-max-widths: (
 
 %container {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: auto !important;
+  margin-left: auto !important;
   padding: $spacer * .25;
 }
 
 @each $n,
-$v in $containers {
+$v in $breakpoints {
 
   .container,
   .container-#{$n} {
@@ -33,7 +25,7 @@ $v in $containers {
 }
 
 @each $n,
-$v in $containers {
+$v in $breakpoints {
   @media (min-width: $v) {
     .container {
       max-width: map.get($container-max-widths, $n);
@@ -42,7 +34,7 @@ $v in $containers {
     $check: true;
 
     @each $i,
-    $j in $containers {
+    $j in $breakpoints {
       @if($check) {
         .container-#{$i} {
           max-width: map.get($container-max-widths, $n);

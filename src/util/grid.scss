@@ -1,0 +1,33 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+$col-z: 100%/$grid-columns;
+
+.col {
+  width: 100%;
+}
+
+@for $i from 1 to $grid-columns +1 {
+  .col-#{$i} {
+    width: $col-z * $i;
+  }
+}
+
+@each $n,
+$v in $breakpoints {
+  @media (min-width: $v) {
+
+    .col-#{$n} {
+      width: 100%;
+    }
+
+    @for $i from 1 to $grid-columns +1 {
+      .col-#{$n}-#{$i} {
+        width: $col-z * $i;
+      }
+    }
+  }
+}

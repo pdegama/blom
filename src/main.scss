@@ -1,19 +1,12 @@
 // utils
 @import "./variables.scss";
 @import "./util/functions.scss";
-
-// colors
-@import "./util/colors.scss";
-
-// component
-@import "./components/Button.scss";
-
-// app utils
+@import "./util/app.scss";
 @import "./util/theme.scss";
-@import "./util/spacer.scss";
 @import "./util/containers.scss";
+@import "./util/grid.scss";
 @import "./util/margin.scss";
 @import "./util/padding.scss";
 
-// app utils
-@import "./util/app.scss"
+// app components
+@import "./components/Button.scss";
