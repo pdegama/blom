@@ -1,11 +1,13 @@
 $light-theme: (
   "text": $light-text,
-  "background": $light-background
+  "background": $light-background,
+  "alt-bg-alpha": $light-alt-background-alpha
 );
 
 $dark-theme: (
   "text": $dark-text,
-  "background": $dark-background
+  "background": $dark-background,
+  "alt-bg-alpha": $dark-alt-background-alpha
 );
 
 .light-theme{

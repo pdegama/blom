@@ -6,6 +6,8 @@ $max-xxl: 1320px;
 
 $dark-background: rgb(26, 27, 30);
 $light-background: #fff;
+$dark-alt-background-alpha: rgba(255, 255, 255, 0.075);
+$light-alt-background-alpha: rgb(26, 27, 30, 0.15);
 $dark-text: #fff;
 $light-text: rgb(26, 27, 30);
 
@@ -20,8 +22,9 @@ $green: #2B8A3E;
 $teal: #099268;
 $cyan: #0dcaf0;
 
+$primary: $blue;
 $colors: (
-  "primary": $blue,
+  "primary": $primary,
   "blue": $blue,
   "indigo": $indigo,
   "purple": $purple,

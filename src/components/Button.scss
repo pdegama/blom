@@ -8,7 +8,7 @@
   margin: $button-margin;
   display: inline-block;
   text-decoration: none;
-  border: none;
+  border: 1px solid #0000;
   outline: none;
   cursor: pointer;
   transition: $transition-button-1;
@@ -45,7 +45,7 @@ $color in $colors {
     }
 
     &:focus-visible {
-      outline: 3px solid rgba(lighten($color, $button-border-darken), .4);
+      outline: 3px solid rgba($color, .4);
     }
 
   }
@@ -60,7 +60,7 @@ $color in $colors {
   margin: $button-margin;
   display: inline-block;
   text-decoration: none;
-  border: none;
+  border: 1px solid #0000;
   outline: none;
   cursor: pointer;
   transition: $transition-button-1;
@@ -78,7 +78,7 @@ $color in $colors {
 
   &:focus-visible {
     transition: $transition-button-2;
-    outline: 3px solid rgba(map.get($colors, "primary"), 0.39);
+    outline: 3px solid rgba(map.get($colors, "primary"), 0.5);
   }
 
 }

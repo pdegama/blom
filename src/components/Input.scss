@@ -1,0 +1,22 @@
+// Input Group
+.input-group{
+  input{
+    font-size: $button-font-size;
+    color: getColor("text");
+    background: getColor("alt-bg-alpha");
+    padding: $button-padding;
+    margin: $button-margin;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #0000;
+    outline: none;
+    cursor: pointer;
+    transition: $transition-button-1;
+    border-radius: $button-radius;
+    
+    &:focus{
+      border: 1px solid $primary !important;
+    }
+
+  }
+}

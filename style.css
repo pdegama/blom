@@ -15,15 +15,19 @@
 .light-theme {
   --color-text: rgb(26, 27, 30);
   --color-background: #fff;
+  --color-alt-bg-alpha: rgba(26, 27, 30, 0.15);
   --color-alt-text: #fff;
   --color-alt-background: rgb(26, 27, 30);
+  --color-alt-alt-bg-alpha: rgba(255, 255, 255, 0.075);
 }
 
 .dark-theme {
   --color-text: #fff;
   --color-background: rgb(26, 27, 30);
+  --color-alt-bg-alpha: rgba(255, 255, 255, 0.075);
   --color-alt-text: rgb(26, 27, 30);
   --color-alt-background: #fff;
+  --color-alt-alt-bg-alpha: rgba(26, 27, 30, 0.15);
 }
 
 .container-xxl,
@@ -629,7 +633,7 @@
   margin: 0.25rem;
   display: inline-block;
   text-decoration: none;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0);
   outline: none;
   cursor: pointer;
   transition: 0.4s;
@@ -657,7 +661,7 @@
   background: #025bdf;
 }
 .btn-primary:focus-visible {
-  outline: 3px solid rgba(114, 171, 254, 0.4);
+  outline: 3px solid rgba(13, 110, 253, 0.4);
 }
 
 .btn-blue {
@@ -670,7 +674,7 @@
   background: #025bdf;
 }
 .btn-blue:focus-visible {
-  outline: 3px solid rgba(114, 171, 254, 0.4);
+  outline: 3px solid rgba(13, 110, 253, 0.4);
 }
 
 .btn-indigo {
@@ -683,7 +687,7 @@
   background: #550bce;
 }
 .btn-indigo:focus-visible {
-  outline: 3px solid rgba(164, 113, 247, 0.4);
+  outline: 3px solid rgba(102, 16, 242, 0.4);
 }
 
 .btn-purple {
@@ -696,7 +700,7 @@
   background: #5d36a4;
 }
 .btn-purple:focus-visible {
-  outline: 3px solid rgba(170, 143, 218, 0.4);
+  outline: 3px solid rgba(111, 66, 193, 0.4);
 }
 
 .btn-pink {
@@ -709,7 +713,7 @@
   background: #bb2670;
 }
 .btn-pink:focus-visible {
-  outline: 3px solid rgba(231, 136, 183, 0.4);
+  outline: 3px solid rgba(214, 51, 132, 0.4);
 }
 
 .btn-red {
@@ -722,7 +726,7 @@
   background: #c62232;
 }
 .btn-red:focus-visible {
-  outline: 3px solid rgba(235, 140, 149, 0.4);
+  outline: 3px solid rgba(220, 53, 69, 0.4);
 }
 
 .btn-orange {
@@ -735,7 +739,7 @@
   background: #e66a02;
 }
 .btn-orange:focus-visible {
-  outline: 3px solid rgba(254, 182, 121, 0.4);
+  outline: 3px solid rgba(253, 126, 20, 0.4);
 }
 
 .btn-yellow {
@@ -748,7 +752,7 @@
   background: #c77400;
 }
 .btn-yellow:focus-visible {
-  outline: 3px solid rgba(255, 185, 87, 0.4);
+  outline: 3px solid rgba(240, 140, 0, 0.4);
 }
 
 .btn-green {
@@ -761,7 +765,7 @@
   background: #216b30;
 }
 .btn-green:focus-visible {
-  outline: 3px solid rgba(82, 201, 106, 0.4);
+  outline: 3px solid rgba(43, 138, 62, 0.4);
 }
 
 .btn-teal {
@@ -774,7 +778,7 @@
   background: #076c4d;
 }
 .btn-teal:focus-visible {
-  outline: 3px solid rgba(17, 240, 172, 0.4);
+  outline: 3px solid rgba(9, 146, 104, 0.4);
 }
 
 .btn-cyan {
@@ -787,7 +791,7 @@
   background: #0ba9c9;
 }
 .btn-cyan:focus-visible {
-  outline: 3px solid rgba(108, 224, 247, 0.4);
+  outline: 3px solid rgba(13, 202, 240, 0.4);
 }
 
 .btn-alt {
@@ -798,7 +802,7 @@
   margin: 0.25rem;
   display: inline-block;
   text-decoration: none;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0);
   outline: none;
   cursor: pointer;
   transition: 0.4s;
@@ -814,7 +818,7 @@
 }
 .btn-alt:focus-visible {
   transition: 0.1s;
-  outline: 3px solid rgba(0, 130, 252, 0.39);
+  outline: 3px solid rgba(13, 110, 253, 0.5);
 }
 
 .btn-com {
@@ -826,6 +830,24 @@
 }
 .btn-com:active {
   transform: translateY(-2px) !important;
+}
+
+.input-group input {
+  font-size: 16px;
+  color: var(--color-text);
+  background: var(--color-alt-bg-alpha);
+  padding: 8px 16px;
+  margin: 0.25rem;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0);
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.input-group input:focus {
+  border: 1px solid #0d6efd !important;
 }
 
 /*# sourceMappingURL=style.css.map */
